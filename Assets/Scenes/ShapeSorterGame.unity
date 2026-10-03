@@ -753,7 +753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d7a8be2c180c54aba969cc060f93e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapeBasket
-  basketType: Triangle
+  basketType: Segitiga
   basketLabel: {fileID: 0}
 --- !u!1 &972679176
 GameObject:
@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d7a8be2c180c54aba969cc060f93e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapeBasket
-  basketType: Square
+  basketType: Persegi
   basketLabel: {fileID: 0}
 --- !u!1 &1245738817
 GameObject:
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d7a8be2c180c54aba969cc060f93e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapeBasket
-  basketType: Circle
+  basketType: Lingkaran
   basketLabel: {fileID: 0}
 --- !u!1 &1356401649
 GameObject:
