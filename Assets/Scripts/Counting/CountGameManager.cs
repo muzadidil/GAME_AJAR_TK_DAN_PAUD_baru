@@ -33,7 +33,7 @@ public class CountGameManager : MonoBehaviour
         UpdateScoreUI();
 
         if (promptText != null)
-            promptText.text = "How many objects are there?";
+            promptText.text = "Ada berapa benda di sini?";
 
         if (feedbackText != null)
             feedbackText.text = "";
@@ -127,7 +127,7 @@ public class CountGameManager : MonoBehaviour
             score++;
 
             if (feedbackText != null)
-                feedbackText.text = "Good job!";
+                feedbackText.text = "Bagus sekali!";
 
             UpdateScoreUI();
 
@@ -137,7 +137,7 @@ public class CountGameManager : MonoBehaviour
         else
         {
             if (feedbackText != null)
-                feedbackText.text = "Try again!";
+                feedbackText.text = "Coba lagi!";
 
             UpdateScoreUI();
         }
@@ -146,7 +146,7 @@ public class CountGameManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Skor: " + score;
     }
 
     void ClearRound()

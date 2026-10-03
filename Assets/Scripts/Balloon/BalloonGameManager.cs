@@ -67,7 +67,7 @@ public class BalloonGameManager : MonoBehaviour
         targetColor = targetPrefab.GetComponent<Balloon>().balloonColor;
 
         // Update prompt text
-        promptText.text = $"Pop the {targetColor} balloon!";
+        promptText.text = $"Pecahkan balon warna {targetColor}!";
         feedbackText.text = "";
 
         bool correctSpawned = false;
@@ -120,15 +120,15 @@ public class BalloonGameManager : MonoBehaviour
             score += 1;
             UpdateScoreUI(); 
 
-            feedbackText.text = "Good job!";
+            feedbackText.text = "Bagus sekali!";
             Destroy(clickedBalloon.gameObject);
 
-            roundOver = true; // Prevent further input until next round
+            roundOver = true;
             Invoke(nameof(SpawnChallenge), 1.5f);
         }
         else
         {
-            feedbackText.text = "Try again!";
+            feedbackText.text = "Coba lagi!";
             Destroy(clickedBalloon.gameObject); // optional: let them retry instead
         }
     }
@@ -145,7 +145,7 @@ public class BalloonGameManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Skor: " + score;
         else
             Debug.LogWarning("ScoreText not assigned in the Inspector!"); 
     }

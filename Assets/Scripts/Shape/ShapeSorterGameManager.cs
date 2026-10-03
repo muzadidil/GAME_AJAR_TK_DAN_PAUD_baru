@@ -38,7 +38,7 @@ public class ShapeSorterGameManager : MonoBehaviour
         ApplyDifficulty();
 
         if (promptText != null)
-            promptText.text = "Drag the shape to the matching basket!";
+            promptText.text = "Seret bentuk ke keranjang yang sesuai!";
 
         if (feedbackText != null)
             feedbackText.text = "";
@@ -57,7 +57,7 @@ public class ShapeSorterGameManager : MonoBehaviour
             if (rt.anchoredPosition.y < missY)
             {
                 if (feedbackText != null)
-                    feedbackText.text = "Try again!";
+                    feedbackText.text = "Coba lagi!";
 
                 Destroy(currentShape.gameObject);
                 currentShape = null;
@@ -100,17 +100,17 @@ public class ShapeSorterGameManager : MonoBehaviour
         switch (randomIndex)
         {
             case 0:
-                chosenShape = "Circle";
+                chosenShape = "Lingkaran";
                 chosenSprite = circleSprite;
                 break;
 
             case 1:
-                chosenShape = "Square";
+                chosenShape = "Persegi";
                 chosenSprite = squareSprite;
                 break;
 
             case 2:
-                chosenShape = "Triangle";
+                chosenShape = "Segitiga";
                 chosenSprite = triangleSprite;
                 break;
         }
@@ -138,7 +138,7 @@ public class ShapeSorterGameManager : MonoBehaviour
             UpdateScoreUI();
 
             if (feedbackText != null)
-                feedbackText.text = "Good job!";
+                feedbackText.text = "Bagus sekali!";
 
             Destroy(shape.gameObject);
             currentShape = null;
@@ -147,7 +147,7 @@ public class ShapeSorterGameManager : MonoBehaviour
         else
         {
             if (feedbackText != null)
-                feedbackText.text = "Try again!";
+                feedbackText.text = "Coba lagi!";
 
             shape.ResetPosition();
         }
@@ -192,6 +192,6 @@ public class ShapeSorterGameManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Skor: " + score;
     }
 }

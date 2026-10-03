@@ -32,7 +32,7 @@ public class MatchingGameManager : MonoBehaviour
         UpdateScoreUI();
 
         if (promptText != null)
-            promptText.text = "Match the letters!";
+            promptText.text = "Cocokkan huruf yang sama!";
 
         if (feedbackText != null)
             feedbackText.text = "";
@@ -173,7 +173,7 @@ public class MatchingGameManager : MonoBehaviour
             score++;
 
             if (feedbackText != null)
-                feedbackText.text = "Good job!";
+                feedbackText.text = "Bagus sekali!";
         }
         else
         {
@@ -181,7 +181,7 @@ public class MatchingGameManager : MonoBehaviour
             secondCard.ShowBack();
 
             if (feedbackText != null)
-                feedbackText.text = "Try again!";
+                feedbackText.text = "Coba lagi!";
         }
 
         firstCard = null;
@@ -199,7 +199,7 @@ public class MatchingGameManager : MonoBehaviour
     void UpdateScoreUI()
     {
         if (scoreText != null)
-            scoreText.text = "Score: " + score;
+            scoreText.text = "Skor: " + score;
     }
 
     void Shuffle(List<string> list)
