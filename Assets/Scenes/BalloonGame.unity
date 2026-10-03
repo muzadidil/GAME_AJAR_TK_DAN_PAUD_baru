@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Back to Menu
+  m_text: 'Kembali ke Menu
 
 '
   m_isRightToLeft: 0
