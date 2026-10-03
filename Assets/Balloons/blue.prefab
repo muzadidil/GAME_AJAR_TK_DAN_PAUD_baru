@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38d2de3345154bb43b29daca54c3e81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloonColor: blue
+  balloonColor: biru
